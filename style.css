@@ -846,7 +846,8 @@ fieldset:disabled .btn {
 }
 
 .collapse:not(.show) {
-  display: none;
+  display: flex;
+  height: 100%;
 }
 
 .collapsing {
