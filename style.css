@@ -23,6 +23,8 @@
   padding-right: 64px;
   padding-bottom: 16px;
   padding-left: 64px;
+  width: 320px !important;
+  height: 200px !important;
 }
 
 /* #hs_cos_wrapper_widget_1683897892799 .scrolling-content-banner__separator {
@@ -70,6 +72,8 @@
   padding-right: 64px;
   padding-bottom: 16px;
   padding-left: 64px;
+  width: 320px !important;
+  height: 200px !important;
 }
 
 /* #hs_cos_wrapper_module_16839028988633 .scrolling-content-banner__separator {} */
