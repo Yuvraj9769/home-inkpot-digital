@@ -3483,7 +3483,6 @@ p {
 }
 
 .right-column {
-  background-color: chartreuse;
   margin: 0;
   padding: 0;
   text-align: right;
@@ -3491,7 +3490,6 @@ p {
 }
 
 .who-left-div-txt {
-  background-color: rebeccapurple;
   color: #0d4534;
   width: 100%;
   font-size: 20px;
