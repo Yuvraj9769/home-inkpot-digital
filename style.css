@@ -4274,6 +4274,78 @@ body {
   color: white;
 }
 
+.loc-icon {
+  font-size: 25px;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.icon-text p {
+  color: #faf5eb !important;
+  font-size: 18px !important;
+  line-height: 1.6 !important;
+  font-weight: 300 !important;
+}
+
+.mail-icon {
+  font-size: 25px;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.mail-txt {
+  color: #faf5eb !important;
+  font-size: 18px !important;
+  line-height: 1.6 !important;
+  font-weight: 300 !important;
+}
+
+.services-h3 {
+  font-family: Inter;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+.res-h3 {
+  font-family: Inter;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+.sub-serv {
+  font-family: Inter !important;
+  font-size: 15px !important;
+  font-weight: 400 !important;
+}
+
+.sub-res {
+  font-family: Inter !important;
+  font-size: 15px !important;
+  font-weight: 400 !important;
+}
+
+.cen-res {
+  align-self: center;
+  margin-top: -15px;
+}
+
+.cen-comp {
+  align-self: center;
+  margin-top: -15px;
+}
+
+.sub-comp {
+  font-family: Inter !important;
+  font-size: 15px !important;
+  font-weight: 400 !important;
+}
+
 .footer-container {
   max-width: 1200px; /* Set a max width */
   margin: 0 auto; /* Center the footer horizontally */
@@ -4288,9 +4360,28 @@ body {
   min-width: 200px;
 }
 
+.left-f-p {
+  font-size: 20px !important;
+  line-height: 1.6 !important;
+  font-weight: 400 !important;
+  margin-bottom: 0;
+}
+
+.right-f-p {
+  font-size: 15px !important;
+  text-transform: capitalize !important;
+  font-weight: 700;
+  line-height: 48px;
+}
+
 .footer-logo img {
   width: 180px;
   margin-bottom: 20px;
+}
+
+.left-f-div,
+.right-f-div {
+  margin-top: 45px;
 }
 
 .column p,
