@@ -1,1 +1,183 @@
-<i class="fa-solid fa-bullseye"></i>  4
+<i class="fa-solid fa-bullseye"></i> 
+
+testimonial code : - 
+
+<div class="testimonial-container">
+    <h2>What Our Clients Say?</h2>
+    <div class="testimonial-slider">
+        <div class="testimonial active">
+            <h4>John Doe</h4>
+            <p class="testimonial-p" >Working with Inkpot Digital has been a game-changer for our business. Their tailored SEO strategies significantly boosted our online visibility.
+            </p>
+            <div class="star-sub-div">
+                <span class="left-span" ></span>
+                <div class="rating">★★★★★</div>
+                <span class="right-span" ></span>
+            </div>
+        </div>
+        <div class="testimonial">
+            <h4>Jane Smith</h4>
+            <p class="testimonial-p">Inkpot Digital's team not only improved our website's traffic but also educated us on how to sustain our SEO success. Truly exceptional service!
+            </p>
+            <div class="star-sub-div">
+                <span class="left-span" ></span>
+                <div class="rating">★★★★★</div>
+                <span class="right-span" ></span>
+            </div>
+        </div>
+        <div class="testimonial">
+            <h4>Emily Johnson</h4>
+            <p class="testimonial-p">Inkpot Digital made marketing automation simple and effective for us. Their expertise helped us streamline campaigns, leading to better leads and higher conversions. The results have been amazing!
+            </p>
+            <div class="star-sub-div">
+                <span class="left-span" ></span>
+                <div class="rating">★★★★★</div>
+                <span class="right-span" ></span>
+            </div>
+        </div>
+        <div class="testimonial">
+            <h4>Emily Johnson</h4>
+            <p class="testimonial-p">We saw remarkable improvements in our rankings within months of partnering with Inkpot Digital. Their detailed audits and actionable insights are top-notch.
+            </p>
+            <div class="star-sub-div">
+                <span class="left-span" ></span>
+                <div class="rating">★★★★★</div>
+                <span class="right-span" ></span>
+            </div>
+        </div>
+        <div class="arrow left" onclick="moveSlide(-1)"><i class="fa-solid fa-arrow-left"></i></div>
+        <div class="arrow right" onclick="moveSlide(1)"><i class="fa-solid fa-arrow-right-long"></i></div>
+    </div>
+</div>
+
+testimonial css : - 
+
+.testimonial-container {
+  background-color: #004738; /* Set background color for the container */
+  padding-top: 20px;
+  padding-bottom: 40px;
+  text-align: center; /* Center text for the heading */
+}
+
+.testimonial-container h2 {
+  color: #faf5eb;
+  font-family: Inter;
+  font-size: 40px;
+  padding-bottom: 10px;
+  line-height: 1.1;
+  font-weight: 800;
+  letter-spacing: -2px;
+  margin-bottom: 35px;
+}
+.testimonial-slider {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
+  text-align: center; /* Center text */
+}
+
+.testimonial {
+  display: none; /* Hide all testimonials by default */
+  padding: 20px;
+}
+
+.testimonial.active {
+  display: block; /* Show the active testimonial */
+}
+.testimonial.active p {
+  color: #faf5eb;
+  margin-inline-start: 70px;
+  margin-inline-end: 70px;
+}
+.testimonial.active h4 {
+  color: #ff8c68;
+  font-family: Inter;
+  font-size: 26px;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 7px;
+  cursor: grab;
+}
+
+.testimonial-p {
+  color: #faf5eb;
+  font-family: Inter;
+  font-size: 20px;
+  line-height: 1.6;
+  cursor: grab;
+}
+
+.star-sub-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  cursor: grab;
+}
+
+.left-span {
+  background-color: #d1c8bb;
+  width: 40%;
+  height: 1px;
+}
+
+.right-span {
+  background-color: #d1c8bb;
+  width: 40%;
+  height: 1px;
+}
+
+.rating {
+  margin-top: 5px;
+  font-size: 20px; /* Adjust star size */
+  color: #ff8c68; /* Gold color for stars */
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  color: #ff8c68;
+  cursor: pointer;
+
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;
+}
+
+.left-card-audit {
+  font-family: Inter;
+  font-size: 35px;
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+.right-card-audit p {
+  color: #faf5eb;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 400;
+  width: 95%;
+}
+
+.btn-right-audit {
+  font-family: Inter;
+  font-size: 15px;
+  line-height: 2.8;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  height: auto;
+  padding: 0 24px;
+}

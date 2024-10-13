@@ -8,11 +8,18 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <link href="style.css" rel="stylesheet" >
-    <script src="index.js" async ></script>
    </head>
 
    <body>
@@ -902,54 +909,267 @@
 </div><!--end widget-span -->
 </div><!--end row-->
 </div><!--end row-wrapper -->
+
+
+
 <!--Testimonials -->
-<div class="testimonial-container">
-    <h2>What Our Clients Say?</h2>
-    <div class="testimonial-slider">
-        <div class="testimonial active">
-            <h4>John Doe</h4>
-            <p class="testimonial-p" >Working with Inkpot Digital has been a game-changer for our business. Their tailored SEO strategies significantly boosted our online visibility.
-            </p>
-            <div class="star-sub-div">
-                <span class="left-span" ></span>
-                <div class="rating">★★★★★</div>
-                <span class="right-span" ></span>
-            </div>
-        </div>
-        <div class="testimonial">
-            <h4>Jane Smith</h4>
-            <p class="testimonial-p">Inkpot Digital's team not only improved our website's traffic but also educated us on how to sustain our SEO success. Truly exceptional service!
-            </p>
-            <div class="star-sub-div">
-                <span class="left-span" ></span>
-                <div class="rating">★★★★★</div>
-                <span class="right-span" ></span>
-            </div>
-        </div>
-        <div class="testimonial">
-            <h4>Emily Johnson</h4>
-            <p class="testimonial-p">Inkpot Digital made marketing automation simple and effective for us. Their expertise helped us streamline campaigns, leading to better leads and higher conversions. The results have been amazing!
-            </p>
-            <div class="star-sub-div">
-                <span class="left-span" ></span>
-                <div class="rating">★★★★★</div>
-                <span class="right-span" ></span>
-            </div>
-        </div>
-        <div class="testimonial">
-            <h4>Emily Johnson</h4>
-            <p class="testimonial-p">We saw remarkable improvements in our rankings within months of partnering with Inkpot Digital. Their detailed audits and actionable insights are top-notch.
-            </p>
-            <div class="star-sub-div">
-                <span class="left-span" ></span>
-                <div class="rating">★★★★★</div>
-                <span class="right-span" ></span>
-            </div>
-        </div>
-        <div class="arrow left" onclick="moveSlide(-1)"><i class="fa-solid fa-arrow-left"></i></div>
-        <div class="arrow right" onclick="moveSlide(1)"><i class="fa-solid fa-arrow-right-long"></i></div>
+
+<div class="scroller-container">
+    <div id="scroller">
+        <ul id="reviewList">
+            <li class="review-item">
+                <div class="review-content">
+                    <div class="upper">
+                        <img src="https://www.aicoderz.com/hubfs/DwayneBrownStudio_OttawaPersonialBranding_MikeTobin.jpg" height="50" width="50" alt="user">
+                        <div class="user-name-rev">
+                            <p>John Doe</p>
+                            <div class="rating">★★★★★</div>
+                        </div>
+                    </div>
+                    <div class="review-text">Aicoderz was able to take my vision for a new company website and make it a reality. They delivered an intuitive, visually appealing site on time and on budget.</div>
+                </div>
+            </li>
+            <li class="review-item">
+                <div class="review-content">
+                    <div class="upper">
+                        <img src="https://www.aicoderz.com/hubfs/DwayneBrownStudio_OttawaPersonialBranding_MikeTobin.jpg" height="50" width="50" alt="user">
+                        <div class="user-name-rev">
+                            <p>Jane Smith</p>
+                            <div class="rating">★★★★☆</div>
+                        </div>
+                    </div>
+                    <div class="review-text">Aicoderz was able to take my vision for a new company website and make it a reality. They delivered an intuitive, visually appealing site on time and on budget.</div>
+                </div>
+            </li>
+            <li class="review-item">
+                <div class="review-content">
+                    <div class="upper">
+                        <img src="https://www.aicoderz.com/hubfs/DwayneBrownStudio_OttawaPersonialBranding_MikeTobin.jpg" height="50" width="50" alt="user">
+                        <div class="user-name-rev">
+                            <p>Mark Wilson</p>
+                            <div class="rating">★★★★★</div>
+                        </div>
+                    </div>
+                    <div class="review-text">Aicoderz was able to take my vision for a new company website and make it a reality. They delivered an intuitive, visually appealing site on time and on budget.</div>
+                </div>
+            </li>
+            <li class="review-item">
+                <div class="review-content">
+                    <div class="upper">
+                        <img src="https://www.aicoderz.com/hubfs/DwayneBrownStudio_OttawaPersonialBranding_MikeTobin.jpg" height="50" width="50" alt="user">
+                        <div class="user-name-rev">
+                            <p>Emily Johnson</p>
+                            <div class="rating">★★★★★</div>
+                        </div>
+                    </div>
+                    <div class="review-text">Aicoderz was able to take my vision for a new company website and make it a reality. They delivered an intuitive, visually appealing site on time and on budget.</div>
+                </div>
+            </li>
+            <li class="review-item">
+                <div class="review-content">
+                    <div class="upper">
+                        <img src="https://www.aicoderz.com/hubfs/DwayneBrownStudio_OttawaPersonialBranding_MikeTobin.jpg" height="50" width="50" alt="user">
+                        <div class="user-name-rev">
+                            <p>Sara Connor</p>
+                            <div class="rating">★★★★☆</div>
+                        </div>
+                    </div>
+                    <div class="review-text">Aicoderz was able to take my vision for a new company website and make it a reality. They delivered an intuitive, visually appealing site on time and on budget.</div>
+                </div>
+            </li>
+            <!-- Duplicate items for continuous scrolling -->
+            <li class="review-item">
+                <div class="review-content">
+                    <div class="upper">
+                        <img src="https://www.aicoderz.com/hubfs/DwayneBrownStudio_OttawaPersonialBranding_MikeTobin.jpg" height="50" width="50" alt="user">
+                        <div class="user-name-rev">
+                            <p>John Doe</p>
+                            <div class="rating">★★★★★</div>
+                        </div>
+                    </div>
+                    <div class="review-text">Aicoderz was able to take my vision for a new company website and make it a reality. They delivered an intuitive, visually appealing site on time and on budget.</div>
+                </div>
+            </li>
+            <li class="review-item">
+                <div class="review-content">
+                    <div class="upper">
+                        <img src="https://www.aicoderz.com/hubfs/DwayneBrownStudio_OttawaPersonialBranding_MikeTobin.jpg" height="50" width="50" alt="user">
+                        <div class="user-name-rev">
+                            <p>Jane Smith</p>
+                            <div class="rating">★★★★☆</div>
+                        </div>
+                    </div>
+                    <div class="review-text">Aicoderz was able to take my vision for a new company website and make it a reality. They delivered an intuitive, visually appealing site on time and on budget.</div>
+                </div>
+            </li>
+            <li class="review-item">
+                <div class="review-content">
+                    <div class="upper">
+                        <img src="https://www.aicoderz.com/hubfs/DwayneBrownStudio_OttawaPersonialBranding_MikeTobin.jpg" height="50" width="50" alt="user">
+                        <div class="user-name-rev">
+                            <p>Mark Wilson</p>
+                            <div class="rating">★★★★★</div>
+                        </div>
+                    </div>
+                    <div class="review-text">Aicoderz was able to take my vision for a new company website and make it a reality. They delivered an intuitive, visually appealing site on time and on budget.</div>
+                </div>
+            </li>
+            <li class="review-item">
+                <div class="review-content">
+                    <div class="upper">
+                        <img src="https://www.aicoderz.com/hubfs/DwayneBrownStudio_OttawaPersonialBranding_MikeTobin.jpg" height="50" width="50" alt="user">
+                        <div class="user-name-rev">
+                            <p>Emily Johnson</p>
+                            <div class="rating">★★★★★</div>
+                        </div>
+                    </div>
+                    <div class="review-text">Aicoderz was able to take my vision for a new company website and make it a reality. They delivered an intuitive, visually appealing site on time and on budget.</div>
+                </div>
+            </li>
+            <li class="review-item">
+                <div class="review-content">
+                    <div class="upper">
+                        <img src="https://www.aicoderz.com/hubfs/DwayneBrownStudio_OttawaPersonialBranding_MikeTobin.jpg" height="50" width="50" alt="user">
+                        <div class="user-name-rev">
+                            <p>Sara Connor</p>
+                            <div class="rating">★★★★☆</div>
+                        </div>
+                    </div>
+                    <div class="review-text">Aicoderz was able to take my vision for a new company website and make it a reality. They delivered an intuitive, visually appealing site on time and on budget.</div>
+                </div>
+            </li>
+        </ul>
     </div>
 </div>
+
+<div class="scroller-container">
+    <div id="scroller2">
+        <ul class="marquee">
+            <li class="review-item">
+                <div class="review-content">
+                    <div class="upper">
+                        <img src="https://www.aicoderz.com/hubfs/DwayneBrownStudio_OttawaPersonialBranding_MikeTobin.jpg" height="50" width="50" alt="user">
+                        <div class="user-name-rev">
+                            <p>John Doe</p>
+                            <div class="rating">★★★★★</div>
+                        </div>
+                    </div>
+                    <div class="review-text">Aicoderz was able to take my vision for a new company website and make it a reality. They delivered an intuitive, visually appealing site on time and on budget.</div>
+                </div>
+            </li>
+            <li class="review-item">
+                <div class="review-content">
+                    <div class="upper">
+                        <img src="https://www.aicoderz.com/hubfs/DwayneBrownStudio_OttawaPersonialBranding_MikeTobin.jpg" height="50" width="50" alt="user">
+                        <div class="user-name-rev">
+                            <p>Jane Smith</p>
+                            <div class="rating">★★★★☆</div>
+                        </div>
+                    </div>
+                    <div class="review-text">Aicoderz was able to take my vision for a new company website and make it a reality. They delivered an intuitive, visually appealing site on time and on budget.</div>
+                </div>
+            </li>
+            <li class="review-item">
+                <div class="review-content">
+                    <div class="upper">
+                        <img src="https://www.aicoderz.com/hubfs/DwayneBrownStudio_OttawaPersonialBranding_MikeTobin.jpg" height="50" width="50" alt="user">
+                        <div class="user-name-rev">
+                            <p>Mark Wilson</p>
+                            <div class="rating">★★★★★</div>
+                        </div>
+                    </div>
+                    <div class="review-text">Aicoderz was able to take my vision for a new company website and make it a reality. They delivered an intuitive, visually appealing site on time and on budget.</div>
+                </div>
+            </li>
+            <li class="review-item">
+                <div class="review-content">
+                    <div class="upper">
+                        <img src="https://www.aicoderz.com/hubfs/DwayneBrownStudio_OttawaPersonialBranding_MikeTobin.jpg" height="50" width="50" alt="user">
+                        <div class="user-name-rev">
+                            <p>Emily Johnson</p>
+                            <div class="rating">★★★★★</div>
+                        </div>
+                    </div>
+                    <div class="review-text">Aicoderz was able to take my vision for a new company website and make it a reality. They delivered an intuitive, visually appealing site on time and on budget.</div>
+                </div>
+            </li>
+            <li class="review-item">
+                <div class="review-content">
+                    <div class="upper">
+                        <img src="https://www.aicoderz.com/hubfs/DwayneBrownStudio_OttawaPersonialBranding_MikeTobin.jpg" height="50" width="50" alt="user">
+                        <div class="user-name-rev">
+                            <p>Sara Connor</p>
+                            <div class="rating">★★★★☆</div>
+                        </div>
+                    </div>
+                    <div class="review-text">Aicoderz was able to take my vision for a new company website and make it a reality. They delivered an intuitive, visually appealing site on time and on budget.</div>
+                </div>
+            </li>
+            <!-- Duplicate items for continuous scrolling -->
+            <li class="review-item">
+                <div class="review-content">
+                    <div class="upper">
+                        <img src="https://www.aicoderz.com/hubfs/DwayneBrownStudio_OttawaPersonialBranding_MikeTobin.jpg" height="50" width="50" alt="user">
+                        <div class="user-name-rev">
+                            <p>John Doe</p>
+                            <div class="rating">★★★★★</div>
+                        </div>
+                    </div>
+                    <div class="review-text">Aicoderz was able to take my vision for a new company website and make it a reality. They delivered an intuitive, visually appealing site on time and on budget.</div>
+                </div>
+            </li>
+            <li class="review-item">
+                <div class="review-content">
+                    <div class="upper">
+                        <img src="https://www.aicoderz.com/hubfs/DwayneBrownStudio_OttawaPersonialBranding_MikeTobin.jpg" height="50" width="50" alt="user">
+                        <div class="user-name-rev">
+                            <p>Jane Smith</p>
+                            <div class="rating">★★★★☆</div>
+                        </div>
+                    </div>
+                    <div class="review-text">Aicoderz was able to take my vision for a new company website and make it a reality. They delivered an intuitive, visually appealing site on time and on budget.</div>
+                </div>
+            </li>
+            <li class="review-item">
+                <div class="review-content">
+                    <div class="upper">
+                        <img src="https://www.aicoderz.com/hubfs/DwayneBrownStudio_OttawaPersonialBranding_MikeTobin.jpg" height="50" width="50" alt="user">
+                        <div class="user-name-rev">
+                            <p>Mark Wilson</p>
+                            <div class="rating">★★★★★</div>
+                        </div>
+                    </div>
+                    <div class="review-text">Aicoderz was able to take my vision for a new company website and make it a reality. They delivered an intuitive, visually appealing site on time and on budget.</div>
+                </div>
+            </li>
+            <li class="review-item">
+                <div class="review-content">
+                    <div class="upper">
+                        <img src="https://www.aicoderz.com/hubfs/DwayneBrownStudio_OttawaPersonialBranding_MikeTobin.jpg" height="50" width="50" alt="user">
+                        <div class="user-name-rev">
+                            <p>Emily Johnson</p>
+                            <div class="rating">★★★★★</div>
+                        </div>
+                    </div>
+                    <div class="review-text">Aicoderz was able to take my vision for a new company website and make it a reality. They delivered an intuitive, visually appealing site on time and on budget.</div>
+                </div>
+            </li>
+            <li class="review-item">
+                <div class="review-content">
+                    <div class="upper">
+                        <img src="https://www.aicoderz.com/hubfs/DwayneBrownStudio_OttawaPersonialBranding_MikeTobin.jpg" height="50" width="50" alt="user">
+                        <div class="user-name-rev">
+                            <p>Sara Connor</p>
+                            <div class="rating">★★★★☆</div>
+                        </div>
+                    </div>
+                    <div class="review-text">Aicoderz was able to take my vision for a new company website and make it a reality. They delivered an intuitive, visually appealing site on time and on budget.</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
 <!--Book an audit -->
 <div class="containerr">
     <!-- Card -->
@@ -1031,4 +1251,11 @@
         </div>
     </div>
 </footer>
+
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+<script src="index.js" ></script>
+
+
 </body></head></html>

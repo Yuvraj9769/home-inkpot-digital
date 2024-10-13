@@ -4092,64 +4092,103 @@ body {
 
 /*  Testimonials */
 
-.testimonial-container {
-  background-color: #004738; /* Set background color for the container */
-  padding-top: 20px;
-  padding-bottom: 40px;
-  text-align: center; /* Center text for the heading */
-}
-
-.testimonial-container h2 {
-  color: #faf5eb;
-  font-family: Inter;
-  font-size: 40px;
-  padding-bottom: 10px;
-  line-height: 1.1;
-  font-weight: 800;
-  letter-spacing: -2px;
-  margin-bottom: 35px;
-}
-.testimonial-slider {
-  position: relative;
+.scroller-container {
   width: 100%;
-  max-width: 800px;
-  margin: auto;
-  overflow: hidden;
-  text-align: center; /* Center text */
+  overflow-x: auto;
+  white-space: nowrap;
 }
 
-.testimonial {
-  display: none; /* Hide all testimonials by default */
-  padding: 20px;
+#scroller {
+  display: inline-block;
+  padding: 10px 0;
+  animation: scroll 25s linear infinite;
 }
 
-.testimonial.active {
-  display: block; /* Show the active testimonial */
-}
-.testimonial.active p {
-  color: #faf5eb;
-  margin-inline-start: 70px;
-  margin-inline-end: 70px;
-}
-.testimonial.active h4 {
-  color: #ff8c68;
-  font-family: Inter;
-  font-size: 26px;
-  line-height: 1.2;
-  font-weight: 700;
-  margin-top: 10px;
-  margin-bottom: 7px;
-  cursor: grab;
+#scroller2 {
+  display: inline-block;
+  padding: 10px 0;
+  animation: scroll2 40s linear infinite;
 }
 
-.testimonial-p {
-  color: #faf5eb;
-  font-family: Inter;
-  font-size: 20px;
-  line-height: 1.6;
-  cursor: grab;
+#scroller:hover {
+  animation-play-state: paused;
 }
 
+.scroller-container::-webkit-scrollbar {
+  display: none;
+}
+
+#scroller2:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll2 {
+  0% {
+    transform: translateX(-68%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.review-item {
+  display: inline-block;
+  width: 400px;
+  height: 210px;
+  margin: 10px;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.review-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  text-wrap: wrap;
+}
+
+.upper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+
+.upper img {
+  border-radius: 50%;
+}
+
+.user-name-rev {
+  margin-left: 10px;
+}
+
+.user-name-rev p {
+  margin: 0 !important;
+  color: black;
+}
+
+.review-text {
+  margin-top: 5px;
+  font-style: italic;
+  color: #555;
+}
+
+.rating {
+  font-weight: bold;
+}
+
+/* start section */
 .star-sub-div {
   display: flex;
   justify-content: space-between;
